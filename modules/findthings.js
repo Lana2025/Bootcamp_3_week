@@ -53,7 +53,7 @@ function cancelFullScreen(el) {
   
   let count = 0;
   
-  // подсвечивает предмет
+  // brihter thing
   function howcollect() {
     if (count == 5) {
       document.querySelector(`#${collect[0]}`).classList.add("light");
@@ -67,7 +67,7 @@ function cancelFullScreen(el) {
   
   let collect = ["one", "two", "three", "for"];
   
-  // создаёт массив из <p> с названиями
+  // create array
   let arrMod = collect.map((el, i) => {
     let p = document.createElement("p");
     p.id = el + 1;
@@ -76,7 +76,7 @@ function cancelFullScreen(el) {
     document.querySelector("#set").appendChild(p);
   });
   let resultdescr = 0;
-  // при клике на предмет - он исчезает с экрана и из списка и из массива
+  // disapier thing
   function setInvisible(e) {
     collect.forEach(el => {
       if (e.target.id == el) {
@@ -102,7 +102,6 @@ function cancelFullScreen(el) {
     checkEndGame();
   });
   
-  // клик сквозь верхний div
   document.querySelector("#my-cuts").addEventListener("click", e => {
     document.querySelector("#my-cuts").style.display = "none";
     let inner = document.elementFromPoint(e.clientX, e.clientY);
