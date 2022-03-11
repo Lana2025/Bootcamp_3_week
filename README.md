@@ -1,3 +1,3 @@
 # Bootcamp_3_week
-Adveture game
+Adveture game.
 In game you can moving in diffrent rooms and collect things.
