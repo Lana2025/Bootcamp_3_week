@@ -274,6 +274,10 @@ function startGame() {
       if (directions.includes(command.toLowerCase())) {
         currentRoom = currentRoom.move(command)
         displayRoomInfo(currentRoom);
+        
+        if(document.getElementById("usertext").value = "south"){
+          document.getElementById('background').style.backgroundImage = 'url(img/start.jpg)';
+        }        
        
       } else {
         document.getElementById("usertext").value = ""
