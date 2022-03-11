@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--required meta--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Adventure game in the Middle Ages</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="find.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="gamearea">
+         <div id="details">
+           <!-- Start game -->
+            <div class="justify-content-center mx-auto bgstart">
+              <div id="title" >
+                <div class="col">
+              <h1 class="text-center">Find the hiden things in the Middieval</h1>              
+            </div>
+          </div>
+              <p id="textarea" class="text-center">There are three rooms: kitchen, bedroom and livin room.<br>
+                There are three hidden objects in each, find them and you will win!</p>                
+              <div id="buttonarea">
+                <input id="startbutton" type="button" value="Start Game" class="btn btn-success text-center" onclick="startGame()"/>
+                
+              </div>
+              <input id="finishtbutton" type="button" value="Finish Game" class="btn btn-success text-center" onclick="finishGame()"/>
+            </div>            
+            <form id="gameform">
+              <div id="userentry">
+              </div>
+            </form>
+            <!-- hidden things -->
+            <div id="shoud">
+              <div class="rotate">
+                <div class="overlay" id="overlay">
+                  <div class="img-bg-blur"></div>
+                 </div>
+                <div class="my-cuts" id="my-cuts"></div>
+                <div class="img-bg" id="background">
+                  <div class="img-tutorial">                   
+                  </div>
+                <img
+                  class="one"
+                  id="one"
+                  src="img/one.png"
+                  alt="one"
+                />
+                <img
+                  class="two"
+                  id="two"
+                  src="img/two.png"
+                  alt="two"
+                />
+                <img
+                  class="three"
+                  id="three"
+                  src="img/three.png"
+                  alt="three"
+                />
+                <img
+                  class="for"
+                  id="for"
+                  src="img/for.png"
+                  alt="for"
+                />
+                <div class="set" id="set"></div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+        <!-- result game -->
+        <div id="result">
+          <div class="justify-content-center mx-auto bgstart">
+            <div id="title" >
+              <div class="col">
+            <h2 class="text-center">You finish game!</h1> 
+              <p>You find</p>
+              <div id="resultdescr"></div>
+              <p>from 4 hiden things</p> 
+              <div id="winn"></div>            
+          </div>
+        </div>         
+        </div>
+      </div> 
+    </div>
+    <!-- link to external JavaScript-->
+    <script src="index.js" type="text/javascript"></script>
+    <script src="modules/findthings.js" type="text/javascript"></script>
+  </body>
+</html>
