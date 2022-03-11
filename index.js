@@ -273,12 +273,10 @@ function startGame() {
       const directions = ["north", "south", "east", "west"]
       if (directions.includes(command.toLowerCase())) {
         currentRoom = currentRoom.move(command)
-        displayRoomInfo(currentRoom);
-        
-        if(document.getElementById("usertext").value = "south"){
+         if(document.getElementById("usertext").value = "south"){
           document.getElementById('background').style.backgroundImage = 'url(img/start.jpg)';
-        }        
-       
+        } 
+        displayRoomInfo(currentRoom);       
       } else {
         document.getElementById("usertext").value = ""
         alert("that is not a valid command please try again")
